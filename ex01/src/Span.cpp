@@ -64,7 +64,7 @@ int Span::longestSpan(void)
     if (this->_span.size() <= 1)
     {
         throw(Span::SpanTooSmall());
-    }
+    }   
     std::vector<int> spanCopy(this->_span);
     std::sort(spanCopy.rbegin(), spanCopy.rend());
     int start = *spanCopy.begin();
